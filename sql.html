@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SQL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="excel.html">Excel</a></li>
+						<li class="active"><a href="sql.html">SQL</a></li>
+						<li><a href="tableau.html">Tableau</a></li>
+						<li><a href="r.html">R</a></li>
+						<!--li><a href="elements.html">Elements Reference</a></li-->
+					</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<!--span class="date">April 25, 2017</span-->
+									<h1>Project 1<br /></h1>
+									<p><strong>SUPERSTORE SALES ANALYSIS</strong></p>								
+								</header>
+								<p><strong>About</strong></p>
+								<p>This project contains Superstore sales data spanning a four-year period. It can be used to analyze the company's sales performance, 
+									including revenue and profit margins. Additionally, this project aims to investigate instances of negative profit margins. The original dataset was sourced from Kaggle (<strong><a href="https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting" target ="_blank">click here</a></strong>).</p>
+								<p><strong>Data cleaning</strong></p>
+								<p>Please refer to the PDF document below for the steps taken to clean the original data. The raw dataset was mostly clean, except for the "Order_ID" column. In this column, the first two letters represent a country code, "CA" for Canada and "US" for the USA. However, in the dataset, both the "States" and "Country" columns pertain only to the United States. 
+									Therefore, all entries with "CA" in the "Order_ID" were replaced with "US."</p>
+								<div class="pdf-container"><iframe src="pdfs/Superstore_Cleaning.pdf" frameborder="0" width="100%" height="500"></iframe></div>
+								<p><strong>Queries</strong></p>
+								<p>To answer business questions related to sales, profits, losses, and more, SQL queries were written in BigQuery. Since there were multiple questions to address, queries related to them were combined into a single script using temporary tables. This approach makes it easier to save queries related to individual questions as CSV files for visualizations. Please refer to the PDF document below for a detailed account of the steps taken.</p>
+							    <div class="pdf-container"><iframe src="pdfs/Superstore_Query.pdf" frameborder="0" width="100%" height="500"></iframe></div>
+								<p><strong>Data visualization</strong></p>
+								<p>All the CSV files generated from the queries were uploaded to Tableau Public for visualizations. One key finding of this project was that for some products in the Subcategory, profit margins were negative. </p>
+							    <p>Further investigation revealed that the primary reason for this was high discount rates relative to the actual product price. These products were also less popular among customers in terms of total sales. It's possible that the company introduced these products into inventory but decided to offer discounts when they saw lower sales, possibly to clear old stock. Please refer to the attached Superstore sales dashboard below for an overview of the parameters considered in the analysis.</p>
+								<p>For a more interactive experience with the dashboard, feel free to <strong><a href="https://public.tableau.com/views/SuperstoreSalesAnalysis_16953796316760/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" target ="_blank">click here</a></strong>.</p>
+							    <div class="pdf-container"><iframe src="pdfs/Superstore_Tableau.pdf" frameborder="0" width="100%" height="500"></iframe></div>
+							</section>
+							<section class="post">
+								<header class="major">
+									<!--span class="date">April 25, 2017</span-->
+									<h1>Project 2<br /></h1>
+									<p><strong>CUSTOMER SPENDING BEHAVIOR</strong></p>								
+								</header>
+								<p><strong>About</strong></p>
+								<p>This project includes an exploratory analysis of customer spending behavior for a bicycle company's sales data in four countries: the USA, France, Germany, and the UK. The company sells three types of bicycle-related products: bike accessories, bicycles, and bike clothing. 
+									The primary objective of this project is to comprehend customer's purchasing and spending behavior based on the price of the products offered by the company. The original dataset was sourced from Kaggle (<strong><a href="https://www.kaggle.com/datasets/thedevastator/analyzing-customer-spending-habits-to-improve-sa" target ="_blank">click here</a></strong>).</p>
+								<p><strong>Data cleaning</strong></p>
+								<p>Please refer to the PDF document below for the steps taken to clean the original data. Some of the attributes in the original dataset were unnecessary for the analysis. Therefore, a new table was created, including only the essential information. The raw dataset was mostly clean, except for the Null values in the country column, which were removed during the cleaning phase.</p>
+								<div class="pdf-container"><iframe src="pdfs/Customer_Spending_Cleaning.pdf" frameborder="0" width="100%" height="500"></iframe></div>
+								<p><strong>Queries</strong></p>
+								<p>To address business questions related to customer spending behavior, sales trends, product revenue, etc., SQL queries were composed in BigQuery. As there were multiple questions to address, queries related to them were consolidated into a single script using temporary tables. This approach simplifies the process of saving queries related to individual questions as CSV files for visualization purposes.
+									Please refer to the PDF document below for a detailed account of the steps taken.
+								</p>
+							    <div class="pdf-container"><iframe src="pdfs/Customer_Spending_Queries.pdf" frameborder="0" width="100%" height="500"></iframe></div>
+								<p><strong>Data visualization</strong></p>
+								<p>All the CSV files generated from the queries were initially uploaded to a single Excel document in xlsx format. This was done to save time on uploading individual files and to facilitate the establishment of relationships between individual sheets for subsequent filtering in Tableau Public for visualization purposes. Some key conclusions drawn from this dataset are as follows: </p>
+							    <ul>
+									<li> Females did not seem to be influenced by the price point and spent more, purchasing a higher number of bicycles and bike accessories compared to men. Similarly, within the age group of adults, between the ages of 30 and 45, there was a higher level of spending, and this demographic contributed the most revenue, purchasing more units across all product categories.</li>
+									<li>The overall purchasing behavior of customers, regardless of age and gender, leaned towards purchasing more units of bike accessories due to their lower price point compared to other categories.</li>
+								</ul>
+								<p>For an overview of the parameters considered in the analysis, please refer to the attached Customer Spending Behavior Dashboard below. 
+									For a more interactive experience with the dashboard, feel free to <strong><a href="https://public.tableau.com/views/CustomerSpendingBehavior/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" target ="_blank">click here</a></strong>.</p>
+							    <div class="pdf-container"><iframe src="pdfs/Customer_Spending_Tableau.pdf" frameborder="0" width="100%" height="500"></iframe></div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<!--footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer-->
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Manikanth</li><li>Design: <a href="https://html5up.net" target ="_blank">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
