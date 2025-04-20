@@ -42,48 +42,10 @@
 					<div id="main">
 
 						<!-- Post -->
-					<section class="post">
-							<header class="major">
-								<!--span class="date">April 25, 2017</span-->
-								<h1>Project 1<br /> 
-								</h1>
-								<p><strong>CLEANING OF YOUTUBE SCRAPPED DATA</strong></p>
-							</header>
-							<p><strong>About</strong></p>
-							<p>This project contains YouTube scrapped data which was collected using web scrapping techniques. 
-								A scrapped data is a data which is collected automatically by web scrapping tools from the internet. It is generally a dirty data which is good to practice excel skills. 
-								The original dataset was sourced from Kaggle (<strong><a href="https://www.kaggle.com/datasets/gaurav2022/youtube-scrapped-data?resource=download" target ="_blank">click here</a></strong>). 
-							</p>
-							<p><strong>Data cleaning</strong></p>
-					
-							<!--embed src="pdfs/beforecleaning.pdf" type="application/pdf" width="1000" height="500"-->
-							<ul>
-								<li>I removed duplicate rows from the dataset using the "Remove Duplicates" tool.</li>
-								<li>I reorganized the dataset.</li>
-								<li>I converted titles to text format. According to YouTube guidelines as of 2021, the maximum allowable title length is 100 characters. Therefore, any titles exceeding this limit were deleted, along with any blank titles. To accomplish this, I used the "Filters" tool.</li>
-								<li> I removed comments and text from the "Upload Date" column. Next, I used functions such as "IF," "LEFT," and "RIGHT" to separate the Upload Dates from Streamline and Premier dates. Since all the dates were in text format, I converted them to date format. However, the Streamline and 
-									Premier dates remained in text format even after conversion, so I used the "DATEVALUE" function to convert them to date format.</li>
-								<li>In the "Views" column, I removed the term "views" from the end of each cell and retained only the numbers. To achieve this, I used the "FIND" tool. Then, I converted the column range to number format.</li>
-								<li>Some of the entries in the "Likes" column had a "k" at the end. To convert these likes to thousands, I used a combination of "IF," "RIGHT," "VALUE," and "LEN" functions.</li>
-								<li>I converted Timestamps into separate columns for date and time using the "INT" and "MOD" functions.</li>
-								<li>Comments made by different individuals were separated by "||". To split individual comments into distinct columns, I used the "TEXTSPLIT" function. Finally, I selected only three comments and deleted the rest.</li>	
-							</ul>
-							<p>*Please refer to the attached documents below for an overview of the dirty and clean data. The dataset to the top is the raw data, and to the bottom is after the cleaning. Please note that only the top 50 rows are taken for comparison. To view the entire dataset before and after cleaning, feel free to visits the links below.</p>
-							<p>Raw data before cleaning:</p>
-							<div class="pdf-container">
-								<iframe src="pdfs/Youtube_Before_Cleaning.pdf" frameborder="0" width="100%" height="500"></iframe>				
-							</div>								
-							<p>Data after cleaning:</p>
-							<div class="pdf-container">
-								<iframe src="pdfs/Youtube_After_Cleaning.pdf" frameborder="0" width="100%" height="500"></iframe>				
-							</div>
-							<p>Full dataset before cleaning <strong><a href="https://1drv.ms/x/c/cf3d259f0d15832f/EXMllaZs43RAlpSsbkhsor0BmKNXM4BdC8QGkzGZAr-UwA?e=5unZ8I" target ="_blank">click here</a></strong></p>
-							<p>Full dataset after cleaning <strong><a href="https://1drv.ms/x/c/cf3d259f0d15832f/EX6W0wQVf6VLtFhBpmPfqt0BuPdZ6TmKXuv-EgihmvREkw?e=5Fwve7" target ="_blank">click here</a></strong></p>		
-						</section>
 						<section class="post">
 							<header class="major">
 								<!--span class="date">April 25, 2017</span-->
-								<h1>Project 2<br /> 
+								<h1>Project 1 (MS Excel)<br /> 
 								</h1>
 								<p><strong>BOOKING DATA OF HOTELS AROUND THE WORLD</strong></p>
 							</header>
@@ -112,61 +74,11 @@
 							<div class="pdf-container">
 								<iframe src="pdfs/Hotel_Bookings.pdf" frameborder="0" width="100%" height="500"></iframe>				
 							</div>									
-						</section>
-						<section class="post">
-							<header class="major">
-								<!--span class="date">April 25, 2017</span-->
-								<h1>Project 3<br /> 
-								</h1>
-								<p><strong>SALES DATA OF A SUPERMARKET CHAIN IN MYANMAR</strong></p>
-							</header>
-							<p><strong>About</strong></p>
-							<p>This project contains sales data for a chain of three stores in Myanmar spanning three months, from January to March 2019. The original dataset was taken from Kaggle (<strong><a href="https://www.kaggle.com/datasets/aungpyaeap/supermarket-sales" target ="_blank">click here</a></strong>). 
-							</p>
-							<p><strong>Data cleaning</strong></p>
-							<p>The dataset underwent a thorough examination to identify duplicate rows, outliers, and data types. It was observed that the raw data was generally clean, except for date data types. All the dates were in text format, and they were subsequently converted to date format.</p>
-							<p><strong>Data visualization</strong></p>
-							<p>For all the visualizations, pivot tables were employed for the analysis. The primary observation within the dataset was that the overall sales for February, across all branches, were slightly lower than in other months. To investigate this finding, monthly trends for all branches were examined, but no significant insights were uncovered. As a result, a hypothesis was considered:</p>
-							<p>The average ratings of the previous month, i.e., January, affected the sales in February.</p>
-							<p>Observation: The average rating for January was approximately 7 on a scale of 10, which is considered satisfactory. The average rating for February was also around 7. The difference between the two ratings is not substantial. If there had been a significant improvement in the ratings for February, this hypothesis might have held true. However, other potential factors that could have 
-								influenced sales in February were explored, but these efforts did not yield positive results. Therefore, the final conclusion is that the dataset is a general dataset, and can be used to understand the data with the help of visualizations.</p>
-							<p>Additionally, some other interesting findings were made, the most noteworthy being:
-							<ul>
-								<li>Females spent more on food & beverages, whereas men spent more on health & beauty products.</li>
-								<li>Females with membership cards contributed more to sales, while men did not show as much interest in having a membership.</li>
-							</ul
-							<p>*Please refer to the attached sales dashboard below for an overview of the parameters considered in the analysis. </p>
-							<p>For more fun with the dashboard, feel free to <strong><a href="https://1drv.ms/x/c/cf3d259f0d15832f/ERo5qYJa0yNJiFUl9zrcBaMBero3Hw44-7X75smV7A9BKg?e=rbuVBP" target ="_blank">click here</a></strong>.</p>					
-							<div class="pdf-container">
-								<iframe src="pdfs/Supermarket_Sales_Myanmar.pdf" frameborder="0" width="100%" height="500"></iframe>				
-							</div>							
-						</section>
+						</section>						
 							<section class="post">
 								<header class="major">
 									<!--span class="date">April 25, 2017</span-->
-									<h1>Project 4<br /></h1>
-									<p><strong>SUPERSTORE SALES ANALYSIS</strong></p>								
-								</header>
-								<p><strong>About</strong></p>
-								<p>This project contains Superstore sales data spanning a four-year period. It can be used to analyze the company's sales performance, 
-									including revenue and profit margins. Additionally, this project aims to investigate instances of negative profit margins. The original dataset was sourced from Kaggle (<strong><a href="https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting" target ="_blank">click here</a></strong>).</p>
-								<p><strong>Data cleaning</strong></p>
-								<p>Please refer to the PDF document below for the steps taken to clean the original data. The raw dataset was mostly clean, except for the "Order_ID" column. In this column, the first two letters represent a country code, "CA" for Canada and "US" for the USA. However, in the dataset, both the "States" and "Country" columns pertain only to the United States. 
-									Therefore, all entries with "CA" in the "Order_ID" were replaced with "US."</p>
-								<div class="pdf-container"><iframe src="pdfs/Superstore_Cleaning.pdf" frameborder="0" width="100%" height="500"></iframe></div>
-								<p><strong>Queries</strong></p>
-								<p>To answer business questions related to sales, profits, losses, and more, SQL queries were written in BigQuery. Since there were multiple questions to address, queries related to them were combined into a single script using temporary tables. This approach makes it easier to save queries related to individual questions as CSV files for visualizations. Please refer to the PDF document below for a detailed account of the steps taken.</p>
-							    <div class="pdf-container"><iframe src="pdfs/Superstore_Query.pdf" frameborder="0" width="100%" height="500"></iframe></div>
-								<p><strong>Data visualization</strong></p>
-								<p>All the CSV files generated from the queries were uploaded to Tableau Public for visualizations. One key finding of this project was that for some products in the Subcategory, profit margins were negative. </p>
-							    <p>Further investigation revealed that the primary reason for this was high discount rates relative to the actual product price. These products were also less popular among customers in terms of total sales. It's possible that the company introduced these products into inventory but decided to offer discounts when they saw lower sales, possibly to clear old stock. Please refer to the attached Superstore sales dashboard below for an overview of the parameters considered in the analysis.</p>
-								<p>For a more interactive experience with the dashboard, feel free to <strong><a href="https://public.tableau.com/views/SuperstoreSalesAnalysis_16953796316760/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" target ="_blank">click here</a></strong>.</p>
-							    <div class="pdf-container"><iframe src="pdfs/Superstore_Tableau.pdf" frameborder="0" width="100%" height="500"></iframe></div>
-							</section>
-							<section class="post">
-								<header class="major">
-									<!--span class="date">April 25, 2017</span-->
-									<h1>Project 5<br /></h1>
+									<h1>Project 2 (SQL)<br /></h1>
 									<p><strong>CUSTOMER SPENDING BEHAVIOR</strong></p>								
 								</header>
 								<p><strong>About</strong></p>
@@ -193,7 +105,7 @@
 			<section class="post">
 			<header class="major">
 				<!--span class="date">April 25, 2017</span-->
-				<h1>Project 6<br />
+				<h1>Project 3 (Tableau)<br />
 				</h1>
 				<p><strong>BIRD STRIKES IN THE USA (2000-11)</strong></p>
 			</header>
@@ -210,30 +122,9 @@
 			<p>For more fun with the dashboard, feel free to <strong><a href="https://public.tableau.com/views/BirdStrikesintheUSA2000-11/BirdStrikesintheUSA?:language=en-US&:display_count=n&:origin=viz_share_link" target ="_blank">click here</a></strong>.</p>
 			<div class="pdf-container">
 				<iframe src="pdfs/Bird_Strikes_USA.pdf" frameborder="0" width="100%" height="500"></iframe>				
-			</div>	
-		</section>
-		<section class="post">
-			<header class="major">
-				<!--span class="date">April 25, 2017</span-->
-				<h1>Project 7<br />
-				</h1>
-				<p><strong>GLOBAL CROP AREA PRODUCTION (1961-2020)</strong></p>
-			</header>
-			<p><strong>About</strong></p>
-			<p> This project investigates into area harvested by crop in the world from 1961-2020. The dataset includes four parameters; country, item harvested, harvest area, and year of harvest. 
-				This dataset belongs to the FAO (Food & Agriculture Organizaion) of the UN, and was taken from data.world (<strong><a href="https://data.world/project-data-viz/fao-crop-area-harvested-1961-to-2020-pdv-11-2022" target ="_blank">click here</a></strong>).</p>
-			<p><strong>Data cleaning</strong></p>
-			<p>The dataset was already clean and ready to be visualized to gain important insights using Tableau Public.</p>
-			<p><strong>Data visualization</strong></p>
-			<p>The first step involved an in-depth analysis of global crop area production spanning from 1961 to 2020. The project aimed to identify long-term trends in the allocation of land for various crop harvesting activities worldwide. It also explored country-wise trends 
-				in crop production. A key observation was the consistent dominance of cereals in global crop production, highlighting their significance in agriculture over the years.</p>
-			<p>*Please refer to the attached bird strikes dashboard below for an overview of the parameters considered in the analysis.</p>
-			<p>For more fun with the dashboard, feel free to <strong><a href="https://public.tableau.com/views/GlobalCropAreaProduction1961-20/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" target ="_blank">click here</a></strong>.</p>
-			<div class="pdf-container">
-				<iframe src="pdfs/Crop_Area_Production.pdf" frameborder="0" width="100%" height="500"></iframe>
-			</section>				
+			</section>
+				
 			</div>
-					</div>
 
 				<!-- Footer -->
 					<!--footer id="footer">
