@@ -4692,7 +4692,7 @@ input, select, textarea {
     grid-template-rows: repeat(auto, 1fr); /* set rows to auto */
     gap: 10px; /* Reduced gap */
     padding: 20px;
-    width: 600px; /* Set a fixed width for the grid container */
+    width: 50px; /* Set a fixed width for the grid container */
     margin: 0 auto; /* Center the grid horizontally */
 }
 
