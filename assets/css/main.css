@@ -4688,16 +4688,17 @@ input, select, textarea {
 .svg-grid {
   display: flex;
   gap: 20px;
-  padding: 20px;
-  background: #f9f9f9;
+  flex-wrap: wrap;
+  padding: 20px 0;
 }
 
 .svg-grid img {
   width: 100px;
   height: auto;
   display: inline-block;
-  border: 1px solid #000;
+  border: 1px solid #ddd;
 }
+
 
 
 
