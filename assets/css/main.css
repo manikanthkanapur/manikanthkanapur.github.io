@@ -4693,11 +4693,12 @@ input, select, textarea {
 }
 
 .svg-grid img {
-  width: 100px;
-  height: 100px;
+  width: 100px;        /* Set a fixed width */
+  height: 100px;       /* Set a fixed height */
   display: inline-block;
   border: 1px solid #ddd;
-  object-fit: contain;
+  object-fit: contain;  /* Maintain aspect ratio within the box */
 }
+
 
 	}
