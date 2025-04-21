@@ -4687,21 +4687,19 @@ input, select, textarea {
 		}
 		
 .svg-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-template-rows: repeat(auto, 1fr); /* set rows to auto */
-    gap: 10px; /* Reduced gap */
-    padding: 20px;
-    width: 50px; /* Set a fixed width for the grid container */
-    margin: 0 auto; /* Center the grid horizontally */
+  display: flex;          /* Use flexbox for horizontal layout */
+  justify-content: center; /* Center images horizontally */
+  align-items: center;     /* Center images vertically */
+  gap: 20px;              /* Spacing between images */
+  padding: 20px;           /* Add some padding around the images */
+  flex-wrap: wrap;         /* Allow images to wrap to the next line if needed */
 }
 
 .svg-grid svg {
-    width: 100%; /* Make SVG fill the grid cell */
-    height: auto; /* Adjust height automatically */
-    object-fit: contain; /* Maintain aspect ratio */
-    border: 1px solid #ddd;
-    display: block;
+  width: 100px;         /* Set a fixed width for each image */
+  height: 100px;        /* Set a fixed height for each image */
+  object-fit: contain;   /* Maintain aspect ratio within the box */
+  border: 1px solid #ddd;
 }
 
 
