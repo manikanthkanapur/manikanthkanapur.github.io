@@ -4685,19 +4685,20 @@ input, select, textarea {
 			box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
 			visibility: visible;
 		}
-.svg-grid {
+body#wrapper #main .post .svg-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin: 2rem 0;
 }
 
-.svg-grid img {
+body#wrapper #main .post .svg-grid img {
   width: 100%;
-  height: 150px; /* Set a fixed height for uniformity */
-  object-fit: contain; /* Keeps the SVG aspect ratio */
-  background: #f9f9f9; /* Optional: for transparent SVGs */
-  border: 1px solid #eee; /* Optional: subtle border */
+  height: 150px;
+  object-fit: contain;
+  background: #f9f9f9;
+  border: 1px solid #eee;
 }
+
 
 	}
