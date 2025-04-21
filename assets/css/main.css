@@ -4686,7 +4686,7 @@ input, select, textarea {
 			visibility: visible;
 		}
 		
-.svg-grid {
+#main .post .svg-grid {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -4695,12 +4695,13 @@ input, select, textarea {
     flex-wrap: wrap;
 }
 
-.svg-grid svg {
+#main .post .svg-grid svg {
     width: 100px;
     height: 100px;
     object-fit: contain;
     border: 1px solid #ddd;
 }
+
 
 
 	}
