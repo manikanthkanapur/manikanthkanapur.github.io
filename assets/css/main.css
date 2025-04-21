@@ -4687,7 +4687,7 @@ input, select, textarea {
 		}
 .svg-grid {
   display: flex;
-  gap: 20px;
+  gap: 80px;
   flex-wrap: wrap;
   padding: 20px 0;
 }
