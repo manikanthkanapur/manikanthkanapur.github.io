@@ -4702,6 +4702,9 @@ input, select, textarea {
     border: 1px solid #ddd;
 }
 
+#main .post h2 {
+    margin-bottom: 0.5rem; /* Reduce the margin to 0.5rem */
+}
 
 
 
