@@ -4685,20 +4685,20 @@ input, select, textarea {
 			box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
 			visibility: visible;
 		}
-body#wrapper #main .post .svg-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.svg-grid {
+  display: flex;
   gap: 20px;
-  margin: 2rem 0;
+  padding: 20px;
+  background: #f9f9f9;
 }
 
-body#wrapper #main .post .svg-grid img {
-  width: 100%;
-  height: 150px;
-  object-fit: contain;
-  background: #f9f9f9;
-  border: 1px solid #eee;
+.svg-grid img {
+  width: 100px;
+  height: auto;
+  display: inline-block;
+  border: 1px solid #000;
 }
+
 
 
 	}
