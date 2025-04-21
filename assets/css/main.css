@@ -4695,10 +4695,12 @@ input, select, textarea {
 
 .svg-grid img {
   width: 100px;
-  height: auto;
+  height: 100px;
   display: inline-block;
   border: 1px solid #ddd;
+  object-fit: contain;
 }
+
 
 
 	}
