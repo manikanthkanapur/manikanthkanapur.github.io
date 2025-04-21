@@ -4685,26 +4685,24 @@ input, select, textarea {
 			box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
 			visibility: visible;
 		}
+		
 .svg-grid {
-  display: grid;              /* Use CSS Grid Layout */
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  grid-template-rows: repeat(3, 1fr);    /* sets the number of rows*/
-  gap: 20px;                  /* Adjust the gap between tiles */
-  padding: 20px;
-  justify-content: center;     /* Horizontally center the grid */
-  align-items: center;         /* Vertically center the grid items */
-  width: fit-content;          /* Make the grid fit its content */
-  margin: 0 auto;              /* Center the entire grid */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(auto, 1fr); /* set rows to auto */
+    gap: 10px; /* Reduced gap */
+    padding: 20px;
+    width: 600px; /* Set a fixed width for the grid container */
+    margin: 0 auto; /* Center the grid horizontally */
 }
 
 .svg-grid svg {
-  width: 100%;                /* Make SVG fill the grid cell */
-  height: 100%;               /* Make SVG fill the grid cell */
-  object-fit: contain;        /* Ensure aspect ratio is maintained */
-  border: 1px solid #ddd;
-  display: block;             /* Remove extra space */
+    width: 100%; /* Make SVG fill the grid cell */
+    height: auto; /* Adjust height automatically */
+    object-fit: contain; /* Maintain aspect ratio */
+    border: 1px solid #ddd;
+    display: block;
 }
-
 
 
 	}
