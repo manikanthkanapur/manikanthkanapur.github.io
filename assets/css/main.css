@@ -3812,7 +3812,7 @@ input, select, textarea {
 
 					#main > .post header.major > .date {
 						margin-top: -1rem;
-						margin-bottom: 2rem;
+						margin-bottom: 0.5rem;
 					}
 
 					#main > .post header.major > h1, #main > .post header.major h2 {
