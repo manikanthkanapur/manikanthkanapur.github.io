@@ -4687,20 +4687,20 @@ input, select, textarea {
 		}
 		
 .svg-grid {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
-.svg-grid img {
-  width: 100px;
-  height: 100px;
-  display: inline-block;
-  border: 1px solid #ddd;
-  object-fit: contain;
+.svg-grid svg {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border: 1px solid #ddd;
 }
-
 
 
 	}
